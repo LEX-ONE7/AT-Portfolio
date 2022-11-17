@@ -5,6 +5,24 @@
   integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
   crossorigin="anonymous"
 />
+<!-- CHANGE NAVBAR COLOR SCROLL -->
+<script>
+  windows.onscroll = function () {
+    scrollfunction();
+  };
+  function scrollfunction() {
+    if (
+      document.body.scrollTop > 60 ||
+      document.documentElement.scrollTop > 60
+    ) {
+      document.getElementById('navbar').style.backgroundColor = 'grey';
+      console.log('1');
+    } else {
+      document.getElementById('navbar').style.backgroundColor = 'transparent';
+      console.log('2');
+    }
+  }
+</script>
 
 <!-- JavaScript Bundle with Popper -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
